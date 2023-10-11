@@ -34,7 +34,7 @@ jobs:
             type=semver,pattern=v{{version}}
             type=semver,pattern=v{{major}}.{{minor}}
             type=semver,pattern=v{{major}}
-            type=edge,branch=main
+            type=edge,branch=master
       -
         name: Docker meta DockerHub
         id: meta-dockerhub
@@ -49,7 +49,7 @@ jobs:
             type=semver,pattern=v{{version}}
             type=semver,pattern=v{{major}}.{{minor}}
             type=semver,pattern=v{{major}}
-            type=edge,branch=main
+            type=edge,branch=master
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v2
